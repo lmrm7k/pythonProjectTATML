@@ -27,12 +27,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "last_opened_file_path": "C:/Leonardo/LMolinari/PESSOAL/Util/Python/PyCharm/PycharmProjects/pythonProjectTATML/static/script"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Leonardo/LMolinari/PESSOAL/Util/Python/PyCharm/PycharmProjects/pythonProjectTATML/static/script&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Leonardo\LMolinari\PESSOAL\Util\Python\PyCharm\PycharmProjects\pythonProjectTATML\static\script" />
