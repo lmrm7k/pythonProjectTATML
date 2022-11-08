@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- Make it compatible to mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>TAT Machine Learning Model Prediction Result </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+
+<body class="result-body">
+    <h1 class="appname textclr">Dados originais coletados do TAT para o modelo de previsão</h1>
+    <main>
+       <table id="demo">
+            {% for row in range(1, sheet.max_row + 1) %}
+             <tr>
+                {% for col in range(1, sheet.max_column + 1): %}
+                <td>{{ sheet.cell(row, col).value }}</td>
+                 {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </main>
+</body>
+</html>
+

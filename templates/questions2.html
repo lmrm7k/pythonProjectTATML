@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- Make it compatible to mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Automation Model Prediction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<h1 class="appname textclr">Variáveis de previsão de scripts a serem inseridas no modelo</h1>
+ <main class="login">
+
+     <!-- Action is where the data is sent. In our case, predict page.
+     If action is omitted, it assumed to be the current page -->
+    <form action="{{ url_for('predict2')}}"method="post">
+        <p class="question textclr">Qual é o número alvo de scripts que você deseja prever?</p>
+    	  <input class="age-input textclr" type="number" name="scriptstarget" placeholder="Número de sripts" required="required" /><br>
+        <p class="question textclr">Qual meta quinzenal (15 dias) mínima você deseja informar (limite inferior)?</p>
+    	  <input class="age-input textclr" type="number" name="semanamin" placeholder="Quinzena inicial" required="required" /><br>
+        <p class="question textclr">Qual meta quinzenal (15 dias) mínima você deseja informar (limite superior)??</p>
+    	  <input class="age-input textclr" type="number" name="semanamax" placeholder="Quinzena final" required="required" /><br>
+        <p class="question textclr">Qual é o número de pessoas que trabalham na automação de scripts?</p>
+    	  <input class="age-input textclr" type="number" name="pessoas" placeholder="Número de pessoas" required="required" /><br>
+        <p class="question textclr">Qual é o número de scripts de automação esperado feito por 15 dias?</p>
+    	  <input class="age-input textclr" type="number" name="scripts_feitos_no_periodo" placeholder="Entre com o número" required="required" /><br>
+        <p class="question textclr">Qual é o número médio esperado de scripts de automação feitos por pessoas em 15 dias?</p>
+    	  <input class="age-input textclr" type="number" name="media_script_semanal_por_pessoa" placeholder="Entre com o número" required="required" /><br>
+        <button type="submit" class="btn-submit" onclick="window.location.href='{{ url_for('predict2') }}';">Obter resultados</button>
+    </form>
+  </main>
+ <footer>
+  <p>"A criação bem-sucedida de inteligência artificial seria o maior evento na história da humanida. Infelizmente, pode também ser o último, a menos que aprendamons a evitar os riscos." Stephen Hawking</p>
+  </footer>
+ 
+</body>
+</html>
+

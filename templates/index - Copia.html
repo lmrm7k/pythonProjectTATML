@@ -1,0 +1,42 @@
+<! DOCTYPE html>
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Linx</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+  <h1 class="appname textclr">TAT Machine Learning</h1>
+  <main>
+    <section class="info-section">
+      <div class="info-desc">
+            <p class="textclr">This a training Machine Learning model, a Multiple Linear Regression, that has the intention to predict number de scripts automated in TAT project.</p>
+      </div>
+        <button class="start-btn" type="button" onclick="window.location.href='{{ url_for('questions') }}';">Biweekly Number Target Prediction</button>
+        <button type="button" class="start-btn" onclick="window.location.href='{{ url_for('questions2') }}';">Number of Automated Scripts Prediction</button>
+        <button type="button" class="start-btn" onclick="window.location.href='{{ url_for('results3') }}';">Original Data Collected</button>
+    </section>
+    <section class="news-section">
+      <div>
+        <p class="news-sec-head textclr">Check out top future Tech tendencies</p>
+      </div>
+      <div id="news" class="news">
+        <a> href="" id="news-link"><p> id="news-title"></p>
+        </a>
+      </div> 
+    </section>
+  </main>
+  <footer>
+    <p>Transform yourself or you will be transfomed in something that you will not like! Leonardo Molinari</p>
+ </footer>
+ <script type="text/javascript" src="{{ url_for('static',filename='script/script.js') }}"></script>
+</body>
+</html>
+
