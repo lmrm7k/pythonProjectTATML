@@ -46,7 +46,7 @@ def questions2():
 
 @app.route('/results3')
 def results3():
-    book = load_workbook("./training_files/TAT-SCRIPTS-HISTORICO-v3-4-QUINZENAL.xlsx")
+    book = load_workbook("./training_files/TAT-SCRIPTS-HISTORICO-SHOW.xlsx")
 
     sheet = book.active
 
@@ -77,7 +77,7 @@ def plot_png():
 def create_figure():
     fig = Figure()
     axis = fig.add_subplot(1, 1, 1)
-    df = pd.read_excel("./training_files/TAT-SCRIPTS-HISTORICO-v3-4-QUINZENAL.xlsx", index_col=0)
+    df = pd.read_excel("./training_files/TAT-SCRIPTS-HISTORICO-SHOW.xlsx", index_col=0)
 
     acumulado = df['acumulado']
     semana = df['semana']
