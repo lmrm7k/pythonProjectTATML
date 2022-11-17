@@ -21,7 +21,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 #Create an app object using the Flask class.
-app = Flask(__name__)
+#app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 ### GLOBAL VARIABLES
 globalacumulado = pd.DataFrame()
